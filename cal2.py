@@ -30,7 +30,7 @@ buttons = [
 
 for i, row in enumerate(buttons):
     for j, btn in enumerate(row):
-        b = tk.Button(root, text=btn, font=('Arial', 18), padx=20, pady=10)
+        b = tk.Button(root, text=btn, font=('Arial', 18),bg="lightblue", fg="black")
         b.grid(row=i+1, column=j, sticky="nsew")
         b.bind("<Button-1>", click)
 
